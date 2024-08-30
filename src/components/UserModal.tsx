@@ -6,7 +6,7 @@ interface UserModalProps {
   visible: boolean;
   onClose: () => void;
   currentUser?: User | null;
-  onSave: (user: Omit<User, "id"> | User) => void;
+  onSave: any;
 }
 
 const UserModal: React.FC<UserModalProps> = ({ visible, onClose, currentUser, onSave }) => {
